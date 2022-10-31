@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  apache:
+    image: httpd:latest
+    container_name: minha-app-apache
+    ports:
+      - 80:80
+    volumes:
+      - /home/dbentooojj/projetos/teste-docker:/usr/local/apache2/htdocs
